@@ -8,7 +8,6 @@ let nirvana1Img;
 let nirvana2Img;
 let lava1;
 let lava2;
-let dust;
 //let video1;
 //characters
 let protagonistbaby;
@@ -34,8 +33,6 @@ function preload() {
   nirvana1Img = loadImage("/media/backgrounds/nirvana1.png");
   nirvana2Img = loadImage("/media/backgrounds/nirvana2.png");
   gameTitleImg = loadImage("/media/backgrounds/gametitle.png");
-  //dust gif source: https://64.media.tumblr.com/96bfcda9ab211b730d680a052d19f83d/tumblr_o7w2veChcr1runoqyo4_540.gifv
-  dust = loadImage("/media/backgrounds/dust.gif");
 
   //boats
   babyboat = loadImage("/media/boats/babyboat.png");
@@ -112,7 +109,6 @@ function nirvana(klickCounter) {
 
   //Smoke
   //background(120, 0, 20, backgroundTrans);
-  image(dust, 100, 0);
   backgroundTrans += bgChange;
   if (backgroundTrans === 0) {
     bgChange = 1;
@@ -226,4 +222,4 @@ function draw() {
   }
 }
 
-rect(100, 100, 100, 100);
+
